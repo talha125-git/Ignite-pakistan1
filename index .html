@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <title>ignite pakistan</title>
+</head>
+
+<script>
+    function Menu(e) {
+        let list = document.querySelector('ul.lg\\:hidden');
+
+        // Toggle the menu open/close
+        if (e.name === 'menu') {
+            e.name = "close";
+            list.classList.add('top-[80px]', 'opacity-100');  // Menu becomes visible and slides down below the logo
+            list.classList.remove('top-[-500px]', 'opacity-0'); // Remove hidden state
+        } else {
+            e.name = "menu";
+            list.classList.add('top-[-500px]', 'opacity-0');  // Menu becomes hidden and slides up
+            list.classList.remove('top-[80px]', 'opacity-100'); // Remove visible state
+        }
+    }
+</script>
+
+<body>
+    <!-- npx tailwindcss -i ./src/input.css -o ./dist/style.css --watch -->
+    <nav class="bg-white py-10">
+        <div class="container  flex justify-between px-9 lg:px-0  lg:justify-center">
+            <!-- Logo -->
+            <div class="flex">
+                <img src="logoisp.png" alt="Logo" class="h-12 w-26 mr-4">
+            </div>
+
+            <!-- Hamburger Menu Icon for Small Screens -->
+            <div class="lg:hidden">
+                <a href="#" name="menu" onclick="Menu(this)" class="text-4xl">&#8801;</a>
+            </div>
+
+            <!-- Navigation Links for Large Screens -->
+            <ul class="hidden lg:flex space-x-8 font-medium mt-4">
+                <li><a href="#" class="hover:text-orange-500">About</a></li>
+                <li><a href="#"
+                        class="border-l-[3px] border-black hover:border-orange-500 pl-4 hover:text-orange-500">Startup
+                        Directory</a></li>
+                <li><a href="#"
+                        class="border-l-[3px] border-black hover:border-orange-500 pl-4 hover:text-orange-500">Investor
+                        Directory</a></li>
+                <li><a href="#"
+                        class="border-l-[3px] border-black hover:border-orange-500 pl-4 hover:text-orange-500">Govt
+                        Linkages</a></li>
+                <li><a href="#"
+                        class="border-l-[3px] border-black hover:border-orange-500 pl-4 hover:text-orange-500">Events</a>
+                </li>
+                <li><a href="#"
+                        class="border-l-[3px] border-black hover:border-orange-500 pl-4 hover:text-orange-500">Analytics</a>
+                </li>
+                <li><a href="#"
+                        class="border-l-[3px] border-black hover:border-orange-500 pl-4 hover:text-orange-500">Contact
+                        Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Dropdown Menu for Small Screens -->
+        <ul
+            class="absolute top-[-500px] w-full bg-white opacity-0 transition-all duration-500 lg:hidden flex-col space-y-4 font-medium  py-4">
+            <li><a href="#"
+                    class="border-l-[3px] ml-10 border-black hover:border-orange-500 pl-4 hover:text-orange-500">About</a>
+            </li>
+            <li><a href="#"
+                    class="border-l-[3px] ml-10 border-black hover:border-orange-500 pl-4 hover:text-orange-500">Startup
+                    Directory</a></li>
+            <li><a href="#"
+                    class="border-l-[3px] ml-10 border-black hover:border-orange-500 pl-4 hover:text-orange-500">Investor
+                    Directory</a></li>
+            <li><a href="#"
+                    class="border-l-[3px] ml-10 border-black hover:border-orange-500 pl-4 hover:text-orange-500">Govt
+                    Linkages</a></li>
+            <li><a href="#"
+                    class="border-l-[3px] ml-10 border-black hover:border-orange-500 pl-4 hover:text-orange-500">Events</a>
+            </li>
+            <li><a href="#"
+                    class="border-l-[3px] ml-10 border-black hover:border-orange-500 pl-4 hover:text-orange-500">Analytics</a>
+            </li>
+            <li><a href="#"
+                    class="border-l-[3px] ml-10 border-black hover:border-orange-500 pl-4 hover:text-orange-500">Contact
+                    Us</a></li>
+        </ul>
+    </nav>
+    <hr>
+
+    <section class="home mt-5 ">
+        <div class="flex lg:flex-row flex-col pb-5">
+            <div class="left-side px-5 lg:ml-10">
+                <div>
+                    <h1 class="md:text-[50px] text-[30px]  font-bold  ">Ignite Your <br>
+                        <span
+                            class="border-2 border-orange-400 px-2 py-1 rounded-md text-orange-400 inline-block ">Entrepreneurial
+                        </span>
+                        <br>Journey <br>
+
+                        With Us!
+                    </h1>
+
+                    <p class="mt-3 text-xl flex flex-wrap">
+                        Unleash imagination, nurture dreams and embrace
+                        the future. <br> Your startup journey begins here!
+                    </p>
+                </div>
+
+                <div class="mt-6 space-x-5 flex  ">
+                    <div>
+                        <button
+                            class="border border-orange-400 sm:px-8 sm:py-5 px-3 py-2 font-medium sm:w-64 text-orange-500 text-2xl rounded-lg transition duration-300 ease-in-out hover:bg-orange-500 hover:text-white"
+                            style="box-shadow: 0 10px 48px rgba(0, 0, 0, 0.25);">Login</button>
+                    </div>
+                    <div class="ml-9">
+                        <button
+                            class="border border-orange-400 sm:px-8 sm:py-5 px-3 py-2 font-medium sm:w-64 text-orange-500 text-2xl rounded-lg transition duration-300 ease-in-out hover:bg-orange-500 hover:text-white"
+                            style="box-shadow: 0 10px 48px rgba(0, 0, 0, 0.25);">Register</button>
+                    </div>
+                </div>
+
+                <div class="mt-14 py-4 flex gap-7 overflow-x-auto  ">
+                    <div class="border bg-slate-900 rounded-lg w-44 px-4 py-2">
+                        <p class="text-end"><i class="bi bi-rocket-takeoff text-orange-400 text-xl"></i></p>
+                        <div class=" text-center mt-2">
+                            <p class="text-orange-400 text-4xl">1693</p>
+                            <p class="text-orange-400 text-xl">Startups</p>
+                        </div>
+                    </div>
+
+                    <div class="border bg-slate-900 rounded-lg w-44 px-4 py-2">
+                        <p class="text-end"><i class="bi bi-fire text-orange-400 text-xl"></i></p>
+                        <div class=" text-center mt-2">
+                            <p class="text-orange-400 text-4xl">17</p>
+                            <p class="text-orange-400 text-xl">Incubators</p>
+                        </div>
+                    </div>
+
+                    <div class="border bg-slate-900 rounded-lg w-44 px-4 py-2">
+                        <p class="text-end"><i class="bi bi-people text-orange-400 text-xl"></i></p>
+                        <div class=" text-center mt-2">
+                            <p class="text-orange-400 text-4xl">46</p>
+                            <p class="text-orange-400 text-xl">Mentors</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="right-side-images">
+
+                <div class=" overflow-hidden rounded-lg">
+                    <img src="g10.jpeg" alt="" class="w-full h-auto lg:h-[680px] object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="w-full h-auto py-6">
+        <div class="flex gap-5 px-4 flex-wrap justify-center lg:flex-nowrap">
+
+            <div class="relative w-[450px] h-[400px] bg-gray-700 rounded-lg overflow-hidden group">
+                <!-- Black overlay and paragraph that shows on hover -->
+                <div
+                    class="absolute top-0 left-0 w-full h-full bg-orange-400 bg-opacity-70 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out">
+                    <div class="absolute bottom-0 left-0 p-4 sm:mb-28 ">
+                        <p class="text-white  leading-relaxed text-center font-medium text-[25px]">
+                            Empowering aspiring entrepreneurs through dedicated mentorship, funding and facilities.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Heading that always stays in the center -->
+                <div class="absolute inset-0 flex justify-center mt-24 z-10 ">
+                    <h2 class="text-white text-4xl font-bold">For Startups</h2>
+                </div>
+
+                <!-- Image that fades out on hover -->
+                <div
+                    class="top-0 left-0 w-full h-full transition-opacity duration-500 ease-in-out group-hover:opacity-0">
+                    <img src="rocket.jpg" alt="Startups"
+                        class="w-full h-full object-cover filter brightness-50" />
+                </div>
+            </div>
+
+            <div class="relative w-[450px] h-[400px] bg-gray-700 rounded-lg overflow-hidden group">
+                <!-- Black overlay and paragraph that shows on hover -->
+                <div
+                    class="absolute top-0 left-0 w-full h-full bg-orange-400 bg-opacity-70 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out">
+                    <div class="absolute bottom-0 left-0 p-4 sm:mb-28">
+                        <p class="text-white  leading-relaxed text-center font-medium text-[25px]">
+
+                            Tailored investment opportunities. Discover and fund startups matching your preferences.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Heading that always stays in the center -->
+                <div class="absolute inset-0 flex justify-center mt-24 z-10 ">
+                    <h2 class="text-white text-4xl font-bold">For Investors</h2>
+                </div>
+
+                <!-- Image that fades out on hover -->
+                <div
+                    class="top-0 left-0 w-full h-full transition-opacity duration-500 ease-in-out group-hover:opacity-0">
+                    <img src="two man bussiness.jpg" alt="Startups"
+                        class="w-full h-full object-cover filter brightness-50" />
+                </div>
+            </div>
+
+            <div class="relative w-[450px] h-[400px] bg-gray-700 rounded-lg overflow-hidden group">
+                <!-- Black overlay and paragraph that shows on hover -->
+                <div
+                    class="absolute top-0 left-0 w-full h-full bg-orange-400 bg-opacity-70 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out">
+                    <div class="absolute bottom-0 left-0 p-4 sm:mb-28 ">
+                        <p class="text-white  leading-relaxed text-center font-medium text-[25px]">
+
+                            Participate, Prosper and preserve. Play your part in building a sustainable entrepreneurial
+                            future.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Heading that always stays in the center -->
+                <div class="absolute inset-0 flex justify-center mt-24 z-10 ">
+                    <h2 class="text-white text-4xl font-bold">For Incubators</h2>
+                </div>
+
+
+
+                <!-- Image that fades out on hover -->
+                <div
+                    class="top-0 left-0 w-full h-full transition-opacity duration-500 ease-in-out group-hover:opacity-0">
+                    <img src="rocketman.jpg" alt="Startups"
+                        class="w-full h-full object-cover filter brightness-50" />
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+    </section>
+
+    <section class="w-full h-auto py-5">
+        <div class="mt-3 bg-pink-100 py-24">
+
+            <div class="flex flex-col justify-center text-center">
+                <div class="px-4">
+                    <h2 class="text-xl text-pink-500">Begin your journey</h2>
+                    <h1 class="text-4xl font-medium mt-3">Simple steps for a hassle-free process</h1>
+                </div>
+
+                <div class="flex justify-center">
+                    <div class="mt-5">
+                        <button
+                            class="border font-medium px-6 py-2 text-xl text-white shadow-2xl shadow-slate-700 bg-orange-500 rounded-l-lg">Startups</button>
+                    </div>
+                    <div class="mt-5">
+                        <button
+                            class="border font-medium px-6 py-2 text-xl  border-orange-600 rounded-r-lg">Investors</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flex justify-center mt-6 px-5 lg:px-60">
+                <img src="startup img.svg" alt="">
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+    <section>
+        <div class="mt-4">
+
+            <div class="text-center">
+                <h2 class="text-orange-600 font-mono text-2xl">Succes at a glance</h2>
+                <h1 class="text-4xl px-4 font-medium mt-3">Unveiling achievements with statistical insights</h1>
+            </div>
+
+            <div class="flex justify-center space-x-7 py-5 flex-wrap">
+
+
+                <div class="text-center flex flex-col items-center">
+                    <div class="px-2 py-2 border rounded-full w-36 h-36 grid place-items-center bg-slate-800">
+                        <i class="bi bi-currency-dollar text-[65px] text-orange-500"></i>
+                    </div>
+
+                    <p class="text-4xl text-slate-700 mt-2">Rs. 18B</p>
+                    <p class="text-xl mt-1">Investment Committed</p>
+
+                </div>
+
+
+
+                <div class="text-center flex flex-col items-center">
+                    <div class="px-2 py-2 border rounded-full w-36 h-36 grid place-items-center bg-slate-800">
+                        <i class="bi bi-search text-[65px] text-orange-500 "></i>
+                    </div>
+                    <p class="text-4xl text-slate-700 mt-3">161,974</p>
+                    <p class="text-xl">Jobs Created</p>
+                </div>
+
+                <div class="text-center flex flex-col items-center">
+                    <div class="px-2 py-2 border rounded-full w-36 h-36 grid place-items-center bg-slate-800">
+                        <i class="bi bi-graph-up-arrow text-[65px] text-orange-500 "></i>
+                    </div>
+                    <p class="text-4xl text-slate-700 mt-3">Rs. 18B</p>
+                    <p class="text-xl">Revenue Generated</p>
+                </div>
+
+                <div class="text-center flex flex-col items-center">
+                    <div class="px-2 py-2 border rounded-full w-36 h-36 grid place-items-center bg-slate-800">
+                        <i class="bi bi-mortarboard text-[65px] text-orange-500 "></i>
+                    </div>
+                    <p class="text-4xl text-slate-700 mt-3">700+</p>
+                    <p class="text-xl">Startups Graduated</p>
+                </div>
+
+                <div class="text-center flex flex-col items-center">
+                    <div class="px-2 py-2 border rounded-full w-36 h-36 grid place-items-center bg-slate-800">
+                        <i class="bi bi-gender-female text-[65px] text-orange-500 "></i>
+                    </div>
+                    <p class="text-4xl text-slate-700 mt-3">345</p>
+                    <p class="text-xl">Female Founders</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="mt-6 p-4">
+
+            <div class="flex gap-6 flex-wrap justify-center  ">
+
+
+                <div class="w-full md:w-1/2 lg:w-1/3 p-6 bg-white shadow-xl border border-slate-200 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-[80%] bg-orange-500 h-5"></div>
+                        <div class="ml-4 text-gray-600">2016-17</div>
+                    </div>
+
+                    <div class="flex items-center mb-4">
+                        <div class="w-1/4 bg-orange-500 h-5"></div>
+                        <div class="ml-4 text-gray-600">2017-18</div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-1/2 bg-orange-500 h-5"></div>
+                        <div class="ml-4 text-gray-600">2018-19</div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-[60%] bg-orange-500 h-5"></div>
+                        <div class="ml-4 text-gray-600">2019-20</div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-[70%] bg-orange-500 h-5"></div>
+                        <div class="ml-4 text-gray-600">2020-21</div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-[40%] bg-orange-500 h-5"></div>
+                        <div class="ml-4 text-gray-600">2021-22</div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-[75%] bg-orange-500 h-5"></div>
+                        <div class="ml-4 text-gray-600">2022-23</div>
+                    </div>
+
+                    <div class="flex  justify-center">
+                        <h1 class="text-xl text-slate-600">Startup boom timeline</h1>
+                    </div>
+                </div>
+
+
+                <div class="w-full md:w-1/2 lg:w-1/3 p-6 bg-white shadow-xl border border-slate-200 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-[38%] bg-orange-500 h-5"></div>
+                        <div class="ml-4 text-gray-600">2016-17</div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-1/4 bg-orange-500 h-5"></div>
+                        <div class="ml-4 text-gray-600">2017-18</div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-[72%] bg-orange-500 h-5"></div>
+                        <div class="ml-4 text-gray-600">2018-19</div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-[80%] bg-orange-500 h-5"></div>
+                        <div class="ml-4 text-gray-600">2019-20</div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-[40%] bg-orange-500 h-5"></div>
+                        <div class="ml-4 text-gray-600">2020-21</div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-[50%] bg-orange-500 h-5"></div>
+                        <div class="ml-4 text-gray-600">2021-22</div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-[25%] bg-orange-500 h-5"></div>
+                        <div class="ml-4 text-gray-600">2022-23</div>
+                    </div>
+
+                    <div class="flex  justify-center">
+                        <h1 class="text-xl text-center text-slate-600">Startup versatility across the industrial
+                            spectrum</h1>
+                    </div>
+
+                </div>
+
+                <div class="w-full md:w-1/2 lg:w-1/3 p-6 bg-white shadow-xl border border-slate-200 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-[20%] bg-orange-500 h-5"></div>
+                        <div class="ml-4 text-gray-600">2016-17</div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-[30%] bg-orange-500 h-5"></div>
+                        <div class="ml-4 text-gray-600">2017-18</div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-[40%] bg-orange-500 h-5"></div>
+                        <div class="ml-4 text-gray-600">2018-19</div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-[50%] bg-orange-500 h-5"></div>
+                        <div class="ml-4 text-gray-600">2019-20</div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-[60%] bg-orange-500 h-5"></div>
+                        <div class="ml-4 text-gray-600">2020-21</div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-[70%] bg-orange-500 h-5"></div>
+                        <div class="ml-4 text-gray-600">2021-22</div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-[80%] bg-orange-500 h-5"></div>
+                        <div class="ml-4 text-gray-600">2022-23</div>
+                    </div>
+
+                    <div class="flex  justify-center">
+                        <h1 class="text-xl text-slate-600">Financial boost of Pakistan’s startups</h1>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+
+    <section class="w-full h-auto  mt-10">
+        <div class="flex justify-between bg-sky-100 rounded-lg py-5 px-5 flex-col lg:flex-row">
+            <div class="pl-4 flex flex-col gap-5 lg:gap-0 items-center lg:items-start  ">
+                <div class="flex flex-col  sm:px-0 px-4">
+                    <div
+                        class="bg-white rounded-full border border-black hover:border-none w-auto h-auto sm:w-[450px] p-10 shadow-lg transform transition-all duration-300 ease-in-out hover:scale-110 ">
+                        <img src="State_Bank_of_Pakistan_logo.svg.png" alt="Ignite Logo"
+                            class="mx-auto w-20 h-20 mb-6">
+                        <p class="text-center text-gray-800 leading-relaxed">
+                            The State Bank of Pakistan (SBP) is incorporated under the State Bank of Pakistan Act, 1956,
+                            which gives
+                            the Bank the authority to function as the central bank of the country. The SBP Act mandates
+                            the Bank to
+                            regulate the monetary and credit system of Pakistan and to foster its growth in the best
+                        </p>
+                        <div class="flex justify-center text-center">
+                            <button
+                                class="bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-white font-bold py-2 px-4 rounded-full mt-6">
+                                Know more
+                            </button>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="flex flex-col lg:ml-[300px] lg:-mt-36 sm:px-0 px-4">
+                    <div
+                        class="bg-white rounded-full border border-black hover:border-none w-auto h-auto sm:w-[450px] p-10 shadow-lg transform transition-all duration-300 ease-in-out hover:scale-110">
+                        <img src="ignite pak logo.png" alt="Ignite Logo" class="mx-auto w-20 h-20 mb-6">
+                        <p class="text-center text-gray-800 leading-relaxed">
+                            Innovation is the prime determinant of the rise and fall of societies. The new surge of
+                            innovation is the fourth industrial
+                            wave, where creativity and innovation are at a premium. Startups are the building blocks of
+                            the knowledge economy. Governments
+                            provide incentives to address
+                        </p>
+                        <div class="flex justify-center text-center">
+                            <button
+                                class="bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-white font-bold py-2 px-4 rounded-full mt-6">
+                                Know more
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col  lg:-mt-72 sm:px-0 px-4">
+                    <div
+                        class="bg-white rounded-full border border-black hover:border-none w-auto h-auto sm:w-[450px] p-10 shadow-lg transform transition-all duration-300 ease-in-out hover:scale-110">
+                        <img src="pseb logo.jpg" alt="Ignite Logo" class="mx-auto w-20 h-20 mb-6">
+                        <p class="text-center text-gray-800 leading-relaxed">
+                            Pakistan’s vast entrepreneurial culture and emerging startups present you with the
+                            opportunity to invest in the rising
+                            talent of our young engineers and IT specialists. With 80% teledensity, we are one of the
+                            highest digitally connected
+                            economies worldwide.
+                        </p>
+                        <div class="flex justify-center text-center">
+                            <button
+                                class="bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-white font-bold py-2 px-4 rounded-full mt-6">
+                                Know more
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+            <div class=" mr-4 py-10 mt-8 w-auto h-auto">
+                <div class="lg:block hidden lg:mt-10">
+                    <h1 class="text-[60px]  text-slate-700 font-medium">Government</h1>
+                    <h1 class="text-[60px]  text-slate-700 font-medium text-end">Linkages</h1>
+                </div>
+                <div class="mt-5 lg:text-end flex justify-center ">
+                    <button class="px-4 py-2 bg-slate-600 text-lg rounded-xl text-orange-400">Explore more</button>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <section class="w-full h-[700px] bg-cover bg-center relative"
+        style="background-image: url('busines-man-woman-2.jpg');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="absolute inset-0 flex lg:flex-row flex-col lg:justify-between text-white">
+            <div>
+                <h1 class="lg:text-[80px] lg:leading-[75px] text-4xl pl-6 font-medium lg:ml-8 lg:mt-3">Startup</h1>
+                <h1 class="lg:text-[80px] lg:leading-[75px] text-4xl pl-6 font-medium lg:ml-8 lg:mt-3">Assistance</h1>
+            </div>
+
+            <div class="flex gap-9 items-center sm:flex-row justify-center lg:mt-0 mt-20">
+                <div class="flex flex-col gap-7">
+                    <span
+                        class="md:px-7 md:py-5 md:text-4xl px-5 py-3 text-xl cursor-pointer bg-slate-800 text-orange-500 rounded-lg font-medium">Incubators</span>
+                    <span
+                        class="md:px-7 md:py-5 md:text-4xl px-5 py-3 text-xl cursor-pointer text-slate-800 bg-orange-500 hover:text-orange-500 hover:bg-slate-800 rounded-lg font-medium">Startups</span>
+                    <span
+                        class="md:px-7 md:py-5 md:text-4xl px-5 py-3 text-xl cursor-pointer text-slate-800 bg-orange-500 hover:text-orange-500 hover:bg-slate-800 rounded-lg font-medium">Investors</span>
+                    <span
+                        class="md:px-7 md:py-5 md:text-4xl px-5 py-3 text-xl cursor-pointer text-slate-800 bg-orange-500 hover:text-orange-500 hover:bg-slate-800 rounded-lg font-medium">Mentors</span>
+                </div>
+
+                <div
+                    class="bg-slate-800 h-auto w-auto lg:h-[400px] lg:w-[350px] rounded-lg flex flex-col justify-center overflow-hidden">
+                    <h3 class="text-xl pl-3 text-orange-500 px-3 whitespace-normal">Incubators brand development
+                        including:</h3>
+                    <ul class="sm:space-y-4 mt-4 space-y-2">
+                        <li class="md:text-xl text-orange-500 flex flex-wrap pl-3 pr-3">● Recognition at national and
+                            international level</li>
+                        <li class="md:text-xl text-orange-500 flex flex-wrap pl-3 pr-3">● Opportunity to synergize
+                            within the national ecosystem</li>
+                        <li class="md:text-xl text-orange-500 flex flex-wrap pl-3 pr-3">● Resource sharing and Startup
+                            exchange</li>
+                        <li class="md:text-xl text-orange-500 flex flex-wrap pl-3 pr-3">● Implementation of Best
+                            Practices</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="w-full h-auto">
+        <div class="flex flex-col lg:flex-row justify-between">
+
+            <div class="relative w-full lg:w-[700px] lg:h-[400px] bg-orange-500">
+                <img src="businesman group.webp" alt="People collaborating"
+                    class="w-full h-full object-cover opacity-50">
+                <div class="absolute inset-0 flex items-center justify-center text-center p-8">
+                    <h2 class="text-2xl w-auto h-auto md:text-4xl font-bold text-white">A library of helpful tools,
+                        information,
+                        documents to keep you updated and well-versed.</h2>
+                </div>
+            </div>
+
+
+            <div
+                class="flex flex-col lg:flex-row lg:items-center justify-between w-full lg:w-auto p-5 lg:pr-5 lg:ml-5 mt-8 lg:mt-0">
+
+                <div class="flex lg:block hidden justify-center lg:justify-start items-center lg:mr-5 mb-5 lg:mb-0">
+                    <img src="arrow.svg" alt="">
+                </div>
+
+                <div class="w-full lg:w-auto text-center lg:text-right">
+
+                    <div class="flex flex-col">
+                        <h1 class="text-5xl sm:text-6xl lg:text-7xl text-slate-700 font-medium">Useful</h1>
+                        <h1 class="text-5xl sm:text-6xl lg:text-7xl text-slate-700 font-medium">Resources</h1>
+                    </div>
+
+
+                    <div class="mt-5 flex justify-center lg:justify-end">
+                        <button class="px-4 py-2 bg-slate-600 text-lg rounded-xl text-orange-400">View more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative w-full h-[500px] bg-cover bg-center"
+        style="background-image: url('buldings.jpg');">
+
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+
+
+        <div class="absolute inset-0 flex flex-col  mt-12 justify-center">
+
+            <div class="px-4">
+                <h1 class="text-4xl text-white font-medium text-center">Stay Enriched with
+                    Pakistan Startup Connect <br class="lg:block hidden">
+                    Latest Updates
+                </h1>
+
+                <p class="text-white text-center text-xl mt-4 text-wrap">
+                    Discover the dynamic world of the startup ecosystem through Pakistan Startup Connect explore the
+                    latest innovations <br class="lg:block hidden"> and get
+                    inspired to play your part in uplifting entrepreneurship.
+                </p>
+            </div>
+
+            <div class="flex justify-center mt-6 px-3">
+                <input type="text" placeholder="enter email to subscribe"
+                    class="text-white px-2 py-4 bg-transparent backdrop-blur-md rounded-xl w-[400px] border border-white">
+
+                <button class="bg-orange-500 rounded-xl  ml-1 px-5 py-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <div class="flex justify-center space-x-7 lg:space-x-14 flex-wrap">
+                <img src="ignite pak logo.png" class="w-40" alt="">
+                <img src="logoisp.png" class="w-32 h-14 mt-12" alt="">
+                <img src="goernment logo.svg" alt="">
+            </div>
+
+            <div class="flex justify-center  ">
+                <ul class="flex flex-wrap justify-center gap-6 lg:gap-12 px-4">
+                    <li
+                        class="text-xl cursor-pointer hover:border px-4 py-2 rounded-lg hover:bg-orange-500 hover:text-white">
+                        About</li>
+                    <li
+                        class="text-xl cursor-pointer hover:border px-4 py-2 rounded-lg hover:bg-orange-500 hover:text-white">
+                        Directory</li>
+                    <li
+                        class="text-xl cursor-pointer hover:border px-4 py-2 rounded-lg hover:bg-orange-500 hover:text-white">
+                        Events</li>
+                    <li
+                        class="text-xl cursor-pointer hover:border px-4 py-2 rounded-lg hover:bg-orange-500 hover:text-white">
+                        Knowledge Hub</li>
+                    <li
+                        class="text-xl cursor-pointer hover:border px-4 py-2 rounded-lg hover:bg-orange-500 hover:text-white">
+                        Analytics</li>
+                </ul>
+            </div>
+
+
+
+            <div class="flex space-x-4 flex-wrap py-6  justify-center mt-2">
+                <!-- Facebook Icon -->
+                <a href="h#" target="_blank"
+                    class="flex items-center justify-center w-12 h-12 border-2 border-slate-700 hover:bg-orange-500 rounded-full">
+                    <i class="bi bi-facebook text-2xl text-slate-700"></i>
+                </a>
+
+
+                <a href="ht#" target="_blank"
+                    class="flex items-center justify-center w-12 h-12 border-2 border-slate-700 hover:bg-orange-500 rounded-full">
+                    <i class="bi bi-instagram text-2xl text-slate-700"></i>
+                </a>
+
+
+                <a href="#" target="_blank"
+                    class="flex items-center justify-center w-12 h-12 border-2 border-slate-700 hover:bg-orange-500 rounded-full">
+                    <i class="bi bi-youtube text-2xl text-slate-700"></i>
+                </a>
+
+                <a href="h#" target="_blank"
+                    class="flex items-center justify-center w-12 h-12 border-2 border-slate-700 hover:bg-orange-500 rounded-full">
+                    <i class="bi bi-linkedin text-2xl text-slate-700"></i>
+                </a>
+
+
+                <a href="#" target="_blank"
+                    class="flex items-center justify-center w-12 h-12 border-2 border-slate-700 hover:bg-orange-500 rounded-full">
+                    <i class="bi bi-twitter text-2xl text-slate-700"></i>
+                </a>
+            </div>
+
+
+            <div class="flex flex-wrap bg-slate-800 text-center justify-center py-5">
+                <p class="text-lg text-slate-200">Copyright © 2024 Ignite – National Technology Fund</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+</body>
+
+</html>
